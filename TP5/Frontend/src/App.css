@@ -1,0 +1,30 @@
+/* Estilos base y de botones usados por TaskForm y TaskList */
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.carrito-botones {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.Button_Agregar,
+.Button_Vaciar,
+.Button_Eliminar {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Button_Agregar { background: #1976d2; }
+.Button_Vaciar { background: #757575; }
+.Button_Eliminar { background: #d32f2f; }
+
+.Button_Agregar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
